@@ -1,6 +1,6 @@
 #!/bin/sh
-# Luke's Auto Rice Boostrapping Script (LARBS)
-# by Luke Smith <luke@lukesmith.xyz>
+# tenklo's Auto Rice Boostrapping Script (LARBS)
+# by tenklo Smith <luke@lukesmith.xyz>
 # License: GNU GPLv3
 
 ### OPTIONS AND VARIABLES ###
@@ -26,7 +26,7 @@ installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null 2>&1 ;}
 error() { clear; printf "ERROR:\\n%s\\n" "$1" >&2; exit 1;}
 
 welcomemsg() { \
-	dialog --title "Welcome!" --msgbox "Welcome to Luke's Auto-Rice Bootstrapping Script!\\n\\nThis script will automatically install a fully-featured Linux desktop, which I use as my main machine.\\n\\n-Luke" 10 60
+	dialog --title "Welcome!" --msgbox "Welcome to tenklo's Auto-Rice Bootstrapping Script!\\n\\nThis script will automatically install a fully-featured Linux desktop, which I use as my main machine.\\n\\n-tenklo" 10 60
 
 	dialog --colors --title "Important Note!" --yes-label "All ready!" --no-label "Return..." --yesno "Be sure the computer you are using has current pacman updates and refreshed Arch keyrings.\\n\\nIf it does not, the installation of some programs might fail." 8 70
 	}
@@ -142,7 +142,7 @@ systembeepoff() { dialog --infobox "Getting rid of that retarded error beep soun
 
 finalize(){ \
 	dialog --infobox "Preparing welcome message..." 4 50
-	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t Luke" 12 80
+	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t tenklo" 12 80
 	}
 
 ### THE ACTUAL SCRIPT ###
@@ -209,7 +209,7 @@ rm -f "/home/$name/README.md" "/home/$name/LICENSE" "/home/$name/FUNDING.yml"
 # Create default urls file if none exists.
 [ ! -f "/home/$name/.config/newsboat/urls" ] && echo "http://lukesmith.xyz/rss.xml
 https://notrelated.libsyn.com/rss
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA \"~Luke Smith (YouTube)\"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA \"~tenklo Smith (YouTube)\"
 https://www.archlinux.org/feeds/news/" > "/home/$name/.config/newsboat/urls"
 # make git ignore deleted LICENSE & README.md files
 git update-index --assume-unchanged "/home/$name/README.md" "/home/$name/LICENSE" "/home/$name/FUNDING.yml"
