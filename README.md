@@ -6,7 +6,7 @@
 On an Arch based distribution as root, run the following:
 
 ```
-curl -LO larbs.xyz/larbs.sh
+curl -LO kloess.xyz/tarbs.sh
 sh larbs.sh
 ```
 
@@ -23,7 +23,7 @@ with a fully configured diving-board for work or more customization.
 ## Customization
 
 By default, tARBS uses the programs [here in progs.csv](progs.csv) and installs
-[my dotfiles repo (currently private) here](https://github.com/tenklo/rice.git),
+[my dotfiles repo here](https://github.com/tenklo/dotfiles.git),
 but you can easily change this by either modifying the default variables at the
 beginning of the script or giving the script one of these options:
 
