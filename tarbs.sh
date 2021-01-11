@@ -1,6 +1,6 @@
 #!/bin/sh
 # tenklo's Auto Rice Boostrapping Script (LARBS)
-# by tenklo Smith <luke@lukesmith.xyz>
+# by tenklo <karsten@kloess.xyz>
 # License: GNU GPLv3
 
 ### OPTIONS AND VARIABLES ###
